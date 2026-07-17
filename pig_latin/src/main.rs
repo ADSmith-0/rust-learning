@@ -1,8 +1,8 @@
 fn main() {
-  println!("{}", to_pig_latin("hello world how are you".to_string()));
+  println!("{}", to_pig_latin("hello world how are you"));
 }
 
-fn to_pig_latin(str: String) -> String {
+fn to_pig_latin(str: &str) -> String {
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   let mut pig_latin = String::from("");
 
